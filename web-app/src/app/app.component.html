@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <span><a href="#" style="text-decoration: none; color: #fff;">My App</a></span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon>
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item routerLink="/login">Login</a>
+      <a mat-menu-item routerLink="/signup">Signup</a>
+      <a mat-menu-item routerLink="/feedback">Rating & Review</a>
+    </mat-menu>
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>
